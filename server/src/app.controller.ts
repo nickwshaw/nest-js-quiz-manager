@@ -9,4 +9,10 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  //routing example
+  @Get('/something')
+  getSomthing(): string {
+    return 'Some other route';
+  }
 }
